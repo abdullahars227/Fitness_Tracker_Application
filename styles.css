@@ -1,0 +1,550 @@
+.form-page {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: rgba(129, 118, 118, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    height:200px;
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.form button {
+    background: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Dashboard Styling */
+
+body {
+    background-color: #f5f6fa;  /* Soft blue-gray background */
+    min-height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    background: #ffffff;
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-logo {
+    height: 120px; /* Increased height */
+    width: 150px; /* Explicit width */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-right: 5rem; /* More space after logo */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20rem; /* Space between nav items */
+    margin-left: 3rem; /* Space between logo and first nav item */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+}
+
+.nav-links a.active {
+    color: #2ecc71;
+    font-weight: 600;
+    transform: scale(1.05); /* Added emphasis */
+}
+
+.nav-links img {
+    height: 28px; /* Slightly larger icons */
+    width: 28px;
+    transition: transform 0.3s;
+}
+
+.nav-links a:hover img {
+    transform: scale(1.1); /* Hover effect on icons */
+}
+
+/* Dashboard Content */
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.metric-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 50%;
+}
+
+.metric-card h3 {
+    color: #2ecc71;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.metric-card p {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+
+
+/* profile page styling */
+
+
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.profile-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #34495e;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.save-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #2980b9;
+}
+
+
+/* workout page styling*/
+
+
+
+
+/* Workout Page Specific CSS */
+.workout-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.workout-title {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.workout-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+
+.exercise-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.1);
+}
+
+.exercise-input {
+    margin-bottom: 25px;
+}
+
+.exercise-input label {
+    display: block;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.exercise-input input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e74c3c;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff6f5;
+}
+
+.workout-button {
+    background: #e74c3c;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.workout-button:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+.workout-history {
+    background: #fff6f5;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.1);
+}
+
+.workout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 15px 0;
+    background: white;
+    border-left: 4px solid #e74c3c;
+    border-radius: 4px;
+}
+
+.calories-badge {
+    background: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .workout-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .exercise-form,
+    .workout-history {
+        padding: 20px;
+    }
+}
+
+
+
+/* progress page styling */
+
+
+body {
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    text-align: center;
+    color: #2ecc71;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+}
+
+.progress-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.progress-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.progress-card:hover {
+    transform: translateY(-5px);
+}
+
+.progress-card h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.progress-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.progress-card p {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-logo {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #34495e;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.nav-links img {
+    height: 24px;
+    width: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .progress-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+
+/* Diet Page Styles */
+body {
+    background-color: #fff9f2;
+}
+
+.page-title {
+    color: #e67e22;
+}
+
+.log-section {
+    display: flex;
+    gap: 30px;
+    flex-direction: column; /* Stack vertically */
+}
+
+.log-form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(230, 126, 34, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.log-history {
+    background: #fff4e6;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(230, 126, 34, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.log-button {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+}
+
+.log-button:hover {
+    background-color: #d35400;
+}
+
+.log-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin: 8px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(230, 126, 34, 0.05);
+}
+
+/* Different input styling */
+.form-group input {
+    border: 1px solid #ffe8cc;
+    background-color: #fffaf5;
+}
+
+.form-group input:focus {
+    border-color: #e67e22;
+    box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.2);
+}
+
+/* Navbar active state */
+.nav-links a.active {
+    color: #e67e22;
+}
+
+/* Meal emoji styling */
+.log-item span:first-child::before {
+    content: '🍴 ';
+    margin-right: 8px;
+}

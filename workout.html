@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout - Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="fitness.png" alt="Logo" class="nav-logo">
+        <div class="nav-links">
+            <a href="dashboard.html" class="active"><img src="dashboard.png" alt="Home">Home</a>
+            <a href="workout.html"><img src="workout-icon.png"Workout">Workout</a>
+            <a href="diet.html"><img src="diet-icon.png" alt="Diet">Diet</a>
+            <a href="progress.html"><img src="progress-icon.png" alt="Progress">Progress</a>
+            <a href="profile.html"><img src="profile-icon.png"Profile">Profile</a>
+        </div>
+    </nav>
+    <div class="workout-container">
+        <h1 class="workout-title">Workout Log</h1>
+        <div class="workout-content">
+            <form class="exercise-form">
+                <div class="exercise-input">
+                    <label>Exercise Name:</label>
+                    <input type="text" required>
+                </div>
+                <div class="exercise-input">
+                    <label>Duration (minutes):</label>
+                    <input type="number" min="1" required>
+                </div>
+                <div class="exercise-input">
+                    <label>Calories Burned:</label>
+                    <input type="number" min="1" required>
+                </div>
+                <button class="workout-button">Add Workout</button>
+            </form>
+
+            <div class="workout-history">
+                <h3>Recent Workouts</h3>
+                <div class="workout-item">
+                    <span>🏃 Running (45 mins)</span>
+                    <span class="calories-badge">350 kcal</span>
+                </div>
+                <div class="workout-item">
+                    <span>🏋️ Weight Lifting (60 mins)</span>
+                    <span class="calories-badge">400 kcal</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
